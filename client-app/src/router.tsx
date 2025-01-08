@@ -16,6 +16,7 @@ export const routerObjects: RouteObject[] = [
     },
 ]
 
+// TODO: поменять хэш роутер на браузер роутер
 export function createRouter(): ReturnType<typeof createHashRouter> {
     const routeWrappers = routerObjects.map((router) => {
         // @ts-ignore TODO: better type support
